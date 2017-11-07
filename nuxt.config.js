@@ -29,14 +29,10 @@ module.exports = {
       '~/plugins/firebase-client-init.js'
     ],
     extractCSS: true,
-    // analyze: true
   },
   modules: [
     // '@nuxtjs/pwa'
   ],
-  router: {
-    // middleware: 'router-auth'
-  },
   plugins: [
     {src: '~/plugins/vuetify.js', ssr: true },
     {src: '~/plugins/firebase-client-init.js', ssr: false },

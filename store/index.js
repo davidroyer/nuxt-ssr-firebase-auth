@@ -42,15 +42,6 @@ const createStore = () => {
           commit('setUser', req.user)
         }
       },
-      // Redirect doesn't work so well yet
-      async signInWithGoogleRedirect ({commit}) {
-        console.log('From signInWithGoogleRedirect:  ');
-        commit('setLoading', true)
-        Auth.signInWithRedirect(GoogleAuthProvider)
-        let authData = await Auth.getRedirectResult()
-        commit('setUser', buildUserObject(authData))
-        commit('setLoading', false)
-      },
 
       async signInWithGooglePopup ({commit}) {
         commit('setLoading', true)
