@@ -73,7 +73,7 @@
         </v-container>
       </v-content>
     </main>
-    <v-footer :fixed="fixed" app>
+    <v-footer fixed app>
       <span>&copy; 2017</span>
       <v-spacer></v-spacer>
       <v-btn flat href="https://github.com/davidroyer/nuxt-ssr-firebase-auth" target="_blank" color="secondary">Github Repo</v-btn>
