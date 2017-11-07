@@ -25,7 +25,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "now": {
-    "alias": "nuxt-firebase-auth"
+    "alias": "nuxt-ssr-firebase-auth"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
