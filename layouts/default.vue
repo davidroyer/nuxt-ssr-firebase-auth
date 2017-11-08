@@ -23,12 +23,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed app>
-      <v-btn
-        icon
-        @click.native.stop="drawer = !drawer">
-        <v-icon>menu</v-icon>
-      </v-btn>
-
+      <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title" class="hidden-xs-only"></v-toolbar-title>
       <v-spacer></v-spacer>
       <span class="userName" v-if="user" v-text="user.name"></span>
@@ -92,7 +87,7 @@ export default {
         { icon: 'info', title: 'About', to: '/about' },
         { icon: 'person', title: 'Admin', to: '/admin' },
       ],
-      title: 'Nuxt Firebase Auth',
+      title: 'Nuxt SSR Firebase Auth',
       menu: false
     }
   },
