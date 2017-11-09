@@ -8,8 +8,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' }
+      // { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' }
     ]
   },
   loading: { color: '#3f51b5' },
@@ -36,7 +36,8 @@ module.exports = {
   plugins: [
     {src: '~/plugins/vuetify.js', ssr: true },
     {src: '~/plugins/firebase-client-init.js', ssr: false },
-    {src: '~/plugins/auth-cookie.js', ssr: false }
+    {src: '~/plugins/auth-cookie.js', ssr: false },
+    {src: '~/plugins/web-font-loader.js', ssr: false }
   ],
   serverMiddleware: [
       '~/serverMiddleware/validateFirebaseIdToken'
